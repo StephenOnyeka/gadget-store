@@ -4,7 +4,7 @@ import { Footer } from "@/app/components/Footer";
 import { Benefits } from "@/app/components/Benefits";
 import { CategoryShowcase } from "@/app/components/CategoryShowcase";
 import { TestimonialsSection } from "@/app/components/TestimonialsSection";
-import { FeatureCarousel } from "@/app/components/FeatureCarousel";
+import { CreatorArchetypes } from "@/app/components/CreatorArchetypes";
 
 export default function Home() {
   return (
@@ -12,7 +12,7 @@ export default function Home() {
       <Hero />
       <Benefits />
       <CategoryShowcase />
-      <FeatureCarousel />
+      <CreatorArchetypes />
       <ProductGrid />
       <TestimonialsSection />
       <Footer />
