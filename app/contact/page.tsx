@@ -14,7 +14,7 @@ export default function ContactPage() {
           {/* Left Column - Info Card */}
           <div className="bg-zinc-100 text-black rounded-[2.5rem] p-8 lg:p-12 flex flex-col justify-between min-h-[600px] relative overflow-hidden">
             <div>
-              <h1 className="text-5xl font-bold tracking-tight mb-6">
+              <h1 className="text-6xl font-semibold tracking-tight mb-6">
                 We’re just a<br />
                 click away
               </h1>
@@ -52,7 +52,7 @@ export default function ContactPage() {
 
             {/* Testimonial Card */}
             <div className="mt-12 bg-zinc-50 rounded-3xl p-6 border border-zinc-100">
-              <p className="text-lg font-medium mb-6 leading-relaxed">
+              <p className="text-md font-medium mb-6">
                 Lumen glasses help me stay focused without distractions. I get
                 subtle updates, directions, and reminders—without breaking my
                 workflow
@@ -70,8 +70,8 @@ export default function ContactPage() {
                     />
                   </div>
                   <div>
-                    <p className="font-bold text-sm">John Carter</p>
-                    <p className="text-xs text-zinc-500">
+                    <p className="font-semibold text-md">John Carter</p>
+                    <p className="text-sm text-zinc-500">
                       VP of Design at Converra
                     </p>
                   </div>
@@ -81,14 +81,14 @@ export default function ContactPage() {
                   <Button
                     size="icon"
                     variant="outline"
-                    className="rounded-full w-10 h-10 border-zinc-300 bg-white hover:bg-zinc-100"
+                    className="rounded-full w-10 h-10 border-black bg-white hover:bg-black hover:text-white"
                   >
                     <ArrowLeft className="w-4 h-4" />
                   </Button>
                   <Button
                     size="icon"
                     variant="outline"
-                    className="rounded-full w-10 h-10 border-zinc-300 bg-white hover:bg-zinc-100"
+                    className="rounded-full w-10 h-10 border-black bg-white hover:bg-black hover:text-white"
                   >
                     <ArrowRight className="w-4 h-4" />
                   </Button>

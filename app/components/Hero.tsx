@@ -36,13 +36,19 @@ export function Hero() {
           <div className="absolute top-0 right-0 w-full h-full md:w-1/2 opacity-50 md:opacity-100 pointer-events-none">
             <div className="relative w-full h-full">
               {/* Placeholder for Hero Image - simulating the glasses */}
-              <Image
+              {/* <Image
                 src="https://images.unsplash.com/photo-1622979135228-d0a0bd00f7d2?w=1200&auto=format&fit=crop&q=80"
                 alt="Hero Glasses"
                 fill
                 className="object-cover object-center mix-blend-screen opacity-80"
+              /> */}
+              <Image
+                src="/images/VR.jpg"
+                alt="Hero Glasses"
+                fill
+                className="object-cover object-bottom mix-blend-screen opacity-80"
               />
-              <div className="absolute inset-0 bg-gradient-to-l from-transparent to-black" />
+              <div className="absolute inset-0 bg-linear-to-l from-transparent to-black" />
             </div>
           </div>
         </div>
