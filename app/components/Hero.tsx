@@ -7,12 +7,12 @@ export function Hero() {
   return (
     <section className="relative w-full py-20 lg:py-32">
       <div className="container mx-auto px-6">
-        <div className="relative overflow-hidden rounded-3xl bg-zinc-900 border border-white/5 p-8 md:p-12 lg:p-20">
+        <div className="relative overflow-hidden rounded-3xl bg-black text-white p-8 md:p-12 lg:p-20">
           <div className="relative z-10 max-w-2xl">
             <h1 className="text-4xl font-bold tracking-tight sm:text-6xl mb-6">
               Reimagining the way you see the world
             </h1>
-            <p className="text-lg text-zinc-400 mb-8 max-w-lg">
+            <p className="text-lg text-zinc-300 mb-8 max-w-lg">
               Discover the next generation of content creation tools. Designed
               for creators who demand excellence.
             </p>
@@ -26,7 +26,7 @@ export function Hero() {
               <Button
                 size="lg"
                 variant="outline"
-                className="rounded-full px-8 border-zinc-700 hover:bg-zinc-800"
+                className="rounded-full px-8 border-zinc-700 text-white hover:bg-zinc-800 hover:text-white"
               >
                 Read More
               </Button>
@@ -42,7 +42,7 @@ export function Hero() {
                 fill
                 className="object-cover object-center mix-blend-screen opacity-80"
               />
-              <div className="absolute inset-0 bg-gradient-to-l from-transparent to-zinc-900" />
+              <div className="absolute inset-0 bg-gradient-to-l from-transparent to-black" />
             </div>
           </div>
         </div>

@@ -1,12 +1,14 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+// import { JetBrains_Mono } from "next/font/google";
+import { Mona_Sans } from "next/font/google";
 import "./globals.css";
 import { cn } from "@/lib/utils";
 import { Navbar } from "@/app/components/Navbar";
 import { CartSidebar } from "@/app/components/CartSidebar";
+import { CartProvider } from "@/app/context/cart-context";
 
-const inter = Inter({
-  variable: "--font-inter",
+const fontMono = Mona_Sans({
+  variable: "--font-mono",
   subsets: ["latin"],
 });
 
@@ -15,19 +17,17 @@ export const metadata: Metadata = {
   description: "Premium tech gear for content creators",
 };
 
-import { CartProvider } from "@/app/context/cart-context";
-
 export default function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className="dark">
+    <html lang="en">
       <body
         className={cn(
-          "min-h-screen bg-black font-sans antialiased text-white selection:bg-white selection:text-black",
-          inter.variable,
+          "min-h-screen bg-background font-mono antialiased text-foreground selection:bg-black selection:text-white",
+          fontMono.variable,
         )}
       >
         <CartProvider>

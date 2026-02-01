@@ -15,7 +15,7 @@ export function ProductCard({ product }: ProductCardProps) {
 
   return (
     <div className="group relative flex flex-col gap-4">
-      <div className="relative aspect-square w-full overflow-hidden rounded-xl bg-zinc-900 border border-white/5 transition-colors group-hover:border-white/20">
+      <div className="relative aspect-square w-full overflow-hidden rounded-xl bg-zinc-100 border border-zinc-200 transition-colors group-hover:border-zinc-300">
         <Image
           src={product.image}
           alt={product.name}
@@ -24,7 +24,7 @@ export function ProductCard({ product }: ProductCardProps) {
         />
         <div className="absolute inset-x-4 bottom-4 translate-y-2 opacity-0 transition-all duration-300 group-hover:translate-y-0 group-hover:opacity-100">
           <Button
-            className="w-full bg-white text-black hover:bg-zinc-200"
+            className="w-full bg-black text-white hover:bg-zinc-800"
             onClick={() => addItem(product)}
           >
             Add to Cart
@@ -33,8 +33,10 @@ export function ProductCard({ product }: ProductCardProps) {
       </div>
       <div>
         <div className="flex justify-between items-start">
-          <h3 className="font-medium text-lg tracking-tight">{product.name}</h3>
-          <span className="font-semibold text-zinc-400">${product.price}</span>
+          <h3 className="font-medium text-lg tracking-tight text-black">
+            {product.name}
+          </h3>
+          <span className="font-semibold text-zinc-600">${product.price}</span>
         </div>
         <p className="text-sm text-zinc-500 mt-1">{product.category}</p>
       </div>
