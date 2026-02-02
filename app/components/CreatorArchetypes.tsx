@@ -10,13 +10,15 @@ import {
   ChevronRight,
   ChevronDown,
 } from "lucide-react";
+import { MdPhotoCamera, MdMic, MdVideocam, MdLaptop} from "react-icons/md";
+
 import { cn } from "@/lib/utils";
 
 const archetypes = [
   {
     id: "streamer",
     label: "The Streamer",
-    icon: Video,
+    icon: MdVideocam,
     description:
       "Build the ultimate streaming command center. From professional lighting to crystal-clear audio, we have the gear to keep your viewers engaged.",
     image:
@@ -25,7 +27,7 @@ const archetypes = [
   {
     id: "vlogger",
     label: "The Vlogger",
-    icon: Camera,
+    icon: MdPhotoCamera,
     description:
       "Lightweight, powerful gear for creators who never stop moving. Gimbals, compact cameras, and mobile kits designed for the streets.",
     image:
@@ -34,7 +36,7 @@ const archetypes = [
   {
     id: "podcaster",
     label: "The Podcaster",
-    icon: Mic,
+    icon: MdMic,
     description:
       "Broadcast your voice with clarity. Professional microphones, boom arms, and acoustic treatment for that perfect radio sound.",
     image:
@@ -43,7 +45,7 @@ const archetypes = [
   {
     id: "editor",
     label: "The Editor",
-    icon: Monitor,
+    icon: MdLaptop,
     description:
       "Optimize your post-production with ergonomic peripherals, high-fidelity monitors, and productivity tools.",
     image:

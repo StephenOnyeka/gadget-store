@@ -4,7 +4,7 @@ import Link from "next/link";
 import { Button } from "./ui/button";
 
 export function ProductGrid() {
-  const displayedProducts = products.slice(0, 15);
+  const displayedProducts = products.slice(0, 9);
 
   return (
     <section className="container mx-auto px-6 py-20" id="products">
