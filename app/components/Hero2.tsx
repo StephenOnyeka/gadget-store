@@ -5,7 +5,7 @@ import { Button } from './ui/button'
 
 export function Hero2() {
   return (
-    <section className="container mx-auto px-6 py-12 mt-8">
+    <section className="container mx-auto md:px-6 px-4 py-12 mt-8">
         <div className="relative h-[600px] w-full rounded-[3rem] overflow-hidden bg-black">
           <video
             autoPlay
@@ -15,7 +15,8 @@ export function Hero2() {
             className="absolute inset-0 w-full h-full object-cover opacity-80"
           >
             <source
-              src="https://videos.pexels.com/video-files/4125670/4125670-uhd_2560_1440_25fps.mp4"
+            //   src="https://videos.pexels.com/video-files/4125670/4125670-uhd_2560_1440_25fps.mp4"
+              src="vid/downloaded-file.mp4"
               type="video/mp4"
             />
           </video>
