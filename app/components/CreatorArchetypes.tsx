@@ -64,7 +64,7 @@ export function CreatorArchetypes() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-24 items-center">
           {/* Left Column: Accordion List */}
           <div className="flex flex-col space-y-8">
-            <h2 className="text-4xl md:text-5xl font-bold tracking-tight mb-8 text-black">
+            <h2 className="text-4xl md:text-5xl font-semibold tracking-tight mb-8 text-black">
               Whom We Serve
             </h2>
 
@@ -98,7 +98,7 @@ export function CreatorArchetypes() {
                       <div className="flex items-center justify-between mb-2">
                         <h3
                           className={cn(
-                            "text-xl font-bold transition-colors duration-300",
+                            "text-xl font-semibold transition-colors duration-300",
                             activeId === archetype.id
                               ? "text-black"
                               : "text-zinc-300 group-hover:text-zinc-400",

@@ -117,10 +117,10 @@ export function TestimonialsSection() {
           </div>
 
           {/* Testimonial Content */}
-          <div className="max-w-4xl mx-auto text-center mb-20 md:mb-24">
+          <div className="max-w-4xl mx-auto text-center">
             <div
-              key={currentIndex}
-              className="animate-in fade-in slide-in-from-bottom-4 duration-500 ease-out"
+              key={currentTestimonial.id}
+              className="animate-in fade-in slide-in-from-bottom-4 duration-500 ease-in"
             >
               <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-black mb-12 leading-snug md:leading-tight tracking-tight">
                 "{currentTestimonial.quote}"
@@ -146,7 +146,7 @@ export function TestimonialsSection() {
           </div>
 
           {/* Companies Logo Strip */}
-          <div className="flex flex-wrap justify-center items-center gap-8 md:gap-12 opacity-40 grayscale hover:grayscale-0 hover:opacity-100 transition-all duration-500">
+          {/* <div className="flex flex-wrap justify-center items-center gap-8 md:gap-12 opacity-40 grayscale hover:grayscale-0 hover:opacity-100 transition-all duration-500">
             {companies.map((company, i) => (
               <div key={i} className="flex items-center gap-2">
                 <company.icon className="w-6 h-6" strokeWidth={2.5} />
@@ -155,7 +155,7 @@ export function TestimonialsSection() {
                 </span>
               </div>
             ))}
-          </div>
+          </div> */}
         </div>
       </div>
     </section>
